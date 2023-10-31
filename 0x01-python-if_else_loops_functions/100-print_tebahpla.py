@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-rev = 0;
+rev = 0
 for i in range(90, 64, -1):
     if rev == 0:
         char = 32
