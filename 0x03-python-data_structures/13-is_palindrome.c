@@ -1,7 +1,5 @@
 #include "lists.h"
 
-int check(listint_t **head, listint_t *last);
-
 /**
  * is_palindrome - know if the linked list palindrom or not
  * @head: poinrer to head
