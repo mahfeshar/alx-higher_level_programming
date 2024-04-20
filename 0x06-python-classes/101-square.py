@@ -16,21 +16,15 @@ class Square:
         self.position = position
 
     def __str__(self) -> str:
-        """readable output to users
-
-        Returns:
-            str: readable output that describe the class
-        """
-        if self.__size == 0:
-            print("")
-            return
-
-        [print("") for i in range(0, self.__position[1])]
+        """Define the print() representation of a Square."""
+        if self.__size != 0:
+            [print("") for i in range(0, self.__position[1])]
         for i in range(0, self.__size):
             [print(" ", end="") for j in range(0, self.__position[0])]
             [print("#", end="") for k in range(0, self.__size)]
-            print("")
-        return ""
+            if i != self.__size - 1:
+                print("")
+        return ("")
 
     @property
     def size(self):
